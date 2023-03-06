@@ -22,7 +22,7 @@ public class Z_StepDefinitions {
         homePage=new HomePage();
         signinPage=new SigninPage();
         if (homePage.turkce.isDisplayed()){
-            homePage.english.click();
+            homePage.turkce.click();
         }
 
     }
