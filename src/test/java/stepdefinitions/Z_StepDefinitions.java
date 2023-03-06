@@ -38,5 +38,35 @@ public class Z_StepDefinitions {
     public void sayfayi_kapatir() {
 
     }
+    @When("Invalid bir email ve valid bir password girerek login olmaya calisir")
+    public void ınvalid_bir_email_ve_valid_bir_password_girerek_login_olmaya_calisir() {
+
+    }
+    @When("Invalid maille login olunamadigini dogrular")
+    public void ınvalid_maille_login_olunamadigini_dogrular() {
+
+    }
+
+    @When("Valid bir email ve invalid password girerek login olmaya calisir")
+    public void valid_bir_email_ve_invalid_password_girerek_login_olmaya_calisir() {
+
+    }
+    @When("Invalid passwordla giris yapilamdigini dogrular")
+    public void ınvalid_passwordla_giris_yapilamdigini_dogrular() {
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
