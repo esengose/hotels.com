@@ -48,4 +48,22 @@ public class MemberPage {
 
 
 
+    //Zeynep(51-60)
+
+
+
+
+
+
+
+
+
+    //Esen(61-70)
+
+
+
+
+
+
+
 }
