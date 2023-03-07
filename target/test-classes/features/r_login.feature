@@ -36,3 +36,14 @@
             And Kullanici "Gift Cards" linkinin gorundugunu dogrular
             And Kullanici "Rewards" linkinin gorundugunu dogrular
             And Kullanici "Credit Card" linkinin gorundugunu dogrular
+
+            @search_testi
+            Scenario:
+              Then Kullanici Sign in linkine tıklar
+              Then Kullanici email kutusuna loginEmail değerini girer
+              Then Kullanici password kutusuna  loginPassword değerini girer
+              Then Kullanici Login Sign in butonuna tıklar
+              Then Kullanici hedef sehri secer
+              Then Kullanici gidis_donus tarihlerini secer
+              Then Kullanici yolcu sayisini secer
+              Then kullanici search butonuna tiklar
