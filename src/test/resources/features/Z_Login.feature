@@ -2,9 +2,10 @@
 Feature:login
     Background:
       Given Kullanici "hotels.coma" gider
-    When Ulke secenegi "Turkiye" ise "Abd" olarak degistirir.
+
 
   Scenario: TC01 Valid degerle login olma
+    When Ulke secenegi "Turkiye" ise "Abd" olarak degistirir.
      When Valid bir email ve password girerek login olur
     Then Basariliyla login yapildigini dogrular
     Then Sayfayi kapatir
