@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features",
         glue="stepdefinitions",
         tags="@hotelscom_login",
-        dryRun=false
+        dryRun=true
 
 )
 
@@ -16,3 +16,4 @@ public class R_Runner {
 
 
 }
+
