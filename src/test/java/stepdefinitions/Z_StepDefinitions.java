@@ -11,6 +11,7 @@ import utilities.Driver;
 public class Z_StepDefinitions {
     HomePage homePage;
     SigninPage signinPage;
+    Driver driver;
 
     @Given("Kullanici {string} gider")
     public void kullanici_gider(String url) {
@@ -21,8 +22,12 @@ public class Z_StepDefinitions {
     public void ulke_secenegi_ise_olarak_degistirir(String string, String string2) {
         homePage=new HomePage();
         signinPage=new SigninPage();
+
         if (homePage.turkce.isDisplayed()){
             homePage.turkce.click();
+           driver.selectFromDropdown(homePage.bolge,"Amerika Birleşik Devletleri · USD $");
+           Driver.wait(1);
+
         }
 
     }

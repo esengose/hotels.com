@@ -280,6 +280,15 @@ public class Driver {
         public static void waitAndClickLocationText(WebElement element, String value) {
             utilities.Driver.getDriver().findElement(By.xpath("//*[text()='" + value + "']")).click();
         }
+    public void selectFromDropdown(WebElement dropdown, String secenek) {
+        List<WebElement> options = dropdown.findElements(By.tagName("option"));
+        for (WebElement eachOption : options) {
+            if (eachOption.getText().equals(secenek)) {
+                eachOption.click();
+                break;
+            }
+        }
+    }
     }
 
 
