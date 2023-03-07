@@ -46,7 +46,8 @@ public class MemberPage {
     @FindBy (id = "search_button")
     public WebElement searchButton;
 
-
+    @FindBy(xpath = "(//button[@type='button'])[3]")
+    public WebElement memberName;
 
     //Zeynep(51-60)
 
