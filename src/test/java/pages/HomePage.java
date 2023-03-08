@@ -33,4 +33,17 @@ public class HomePage {
 
 
 
+
+
+
+
+ //40=50 zeynep
+ @FindBy(xpath = "//select[@id='language-selector']")   public WebElement languageDropDown;
+
+
+
+
+
+
+
 }

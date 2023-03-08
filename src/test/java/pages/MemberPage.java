@@ -10,8 +10,8 @@ public class MemberPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-    @FindBy (xpath = "//*[text()='More travel']")
-    public WebElement moreTravelDropdown;
+    @FindBy (id = "gc-custom-header-tool-bar-shop-menu")
+    public WebElement more_travel_2;
 
     @FindBy (xpath = "(//*[text()='Going to'])[3]")
     public WebElement goingToButton;
@@ -63,6 +63,33 @@ public class MemberPage {
 
 
 
+
+
+
+
+
+
+  //Rabia(71-80)
+  @FindBy (xpath = "//a[@href='/lp/b/deals']")
+  public WebElement deals_link;
+
+    @FindBy (xpath = "//a[@href='/vacation-rental']")
+    public WebElement vacation_rentals_link;
+
+    @FindBy (linkText = "https://cars.hotels.com/en-us/?clientID=541572#/searchcars")
+    public WebElement car_rental_link;
+
+    @FindBy (linkText = "https://www.hotels.com/lp/b/deals")
+    public WebElement groups_meetings_link;
+
+    @FindBy (linkText = "https://www.hotels.com/lp/b/deals")
+    public WebElement gift_cards_link;
+
+    @FindBy (linkText = "https://www.hotels.com/lp/b/deals")
+    public WebElement rewards_link;
+
+    @FindBy (linkText = "https://www.hotels.com/lp/b/deals")
+    public WebElement credit_card_link;
 
 
 

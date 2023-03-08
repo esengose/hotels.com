@@ -7,10 +7,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features="src/test/resources/features",
         glue="stepdefinitions",
-        tags="",
-        dryRun=false
-
-
+        tags="@hotelscom_login",
+        dryRun=true
 
 )
 
@@ -18,3 +16,4 @@ public class R_Runner {
 
 
 }
+

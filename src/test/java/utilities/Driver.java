@@ -26,7 +26,7 @@ public class Driver {
         //Why?=>We don't want to create and initialize the driver when we don't need
         //We will create and initialize the driver when it is null
         //We can use Driver class with different browser(chrome,firefox,headless)
-        private Driver() {
+        public Driver() {
             //we don't want to create another abject. Singleton pattern
         }
         //to initialize the driver we create a static method
@@ -280,6 +280,15 @@ public class Driver {
         public static void waitAndClickLocationText(WebElement element, String value) {
             utilities.Driver.getDriver().findElement(By.xpath("//*[text()='" + value + "']")).click();
         }
+    public static void selectFromDropdown(WebElement dropdown, String secenek) {
+        List<WebElement> options = dropdown.findElements(By.tagName("option"));
+        for (WebElement eachOption : options) {
+            if (eachOption.getText().equals(secenek)) {
+                eachOption.click();
+                break;
+            }
+        }
+    }
     }
 
 
