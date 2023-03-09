@@ -20,7 +20,7 @@ public class E_StepDefinitions {
     @Given("User goes to {string}")
     public void user_goes_to(String string) {
         Driver.getDriver().get(string);
-        Driver.clickWithJS(homePage.Turkce2);
+      //  Driver.clickWithJS(homePage.Turkce2);
         Driver.wait(5);
         Select select = new Select(homePage.bolge);
         select.selectByValue("300000001");
