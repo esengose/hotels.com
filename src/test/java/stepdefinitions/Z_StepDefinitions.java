@@ -6,13 +6,15 @@ import io.cucumber.java.en.When;
 import pages.CreateAccountPage;
 import pages.HomePage;
 import pages.SigninPage;
+import pages.ZeyPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class Z_StepDefinitions {
     HomePage homePage;
     SigninPage signinPage;
-    CreateAccountPage createAccountPage;
+  ZeyPage zeyPage;
+
 
 
     @Given("Kullanici {string} gider")
@@ -24,6 +26,7 @@ public class Z_StepDefinitions {
     public void ulke_secenegi_ise_olarak_degistirir(String string, String string2) {
         homePage=new HomePage();
         signinPage=new SigninPage();
+
         try {
              if( homePage.turkce.isDisplayed()){
             homePage.turkce.click();
@@ -38,7 +41,10 @@ public class Z_StepDefinitions {
     public void valid_bir_email_ve_password_girerek_login_olur() {
 homePage=new HomePage();
 signinPage=new SigninPage();
+zeyPage=new ZeyPage();
 homePage.signIn.click();
+Driver.wait(2);
+Driver.clickWithJS(zeyPage.signIn2);
 signinPage.loginEmail.sendKeys(ConfigReader.getProperty("signIn_zeymail"));
 signinPage.loginPassword.sendKeys(ConfigReader.getProperty("signIn_zeypassword"));
 
