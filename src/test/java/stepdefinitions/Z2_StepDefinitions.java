@@ -2,14 +2,28 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.HomePage;
+import pages.MemberPage;
+import pages.ZeyPage;
+import utilities.Driver;
 
 public class Z2_StepDefinitions {
+MemberPage memberPage;
+HomePage homePage;
+ZeyPage zeyPage;
 
-
-    @When("more travelda dropdownunda  Deals seceneginin gorundugunu dogrular")
+    @When("more travelda dropdownunda    Deals seceneginin gorundugunu dogrular")
     public void more_travelda_dropdownunda_deals_seceneginin_gorundugunu_dogrular() {
-
+        memberPage=new MemberPage();
+        zeyPage=new ZeyPage();
+        homePage=new HomePage();
+       memberPage.more_travel_2.click();
+       Driver.wait(3);
+        String moreTravelDropDown=memberPage.deals_link.getText();
+        System.out.println(moreTravelDropDown);
     }
+
+
     @When("more travelda Vacation Rentals seceneginin gorundugunu dogrular")
     public void more_travelda_vacation_rentals_seceneginin_gorundugunu_dogrular() {
 
