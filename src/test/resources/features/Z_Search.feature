@@ -1,6 +1,6 @@
-@search
-Feature: Search
 
+Feature: Search
+@search
   Scenario:
     Given Kullanici "hotels.coma" gider
     When Ulke secenegi "Turkiye" ise "Abd" olarak degistirir.
