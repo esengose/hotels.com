@@ -34,7 +34,8 @@ public WebElement allInclusiveFilter;
 public WebElement fullypayFilter;
     @FindBy(xpath = "(//input[@id='lodging-HOTEL_RESORT-1yl'])[1]")
     public WebElement hotelFilter;
-
+@FindBy(xpath = "//h3[@class='uitk-error-summary-heading']")
+    public WebElement errorMessage;
 
 
 
